@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exeptions/EsercitazioneEX2301/EsercitazioneEX2301.iml" filepath="$PROJECT_DIR$/Exeptions/EsercitazioneEX2301/EsercitazioneEX2301.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi/Esercizi.iml" filepath="$PROJECT_DIR$/Esercizi/Esercizi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exeptions/Pandora/Pandora.iml" filepath="$PROJECT_DIR$/Exeptions/Pandora/Pandora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/SimulatoreGaraOlimpica.iml" filepath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/SimulatoreGaraOlimpica.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TPSI.iml" filepath="$PROJECT_DIR$/.idea/TPSI.iml" />
       <module fileurl="file://$PROJECT_DIR$/UML/UML.iml" filepath="$PROJECT_DIR$/UML/UML.iml" />
     </modules>
