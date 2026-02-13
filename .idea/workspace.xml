@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9ba240-0b9f-4cb9-a73a-fd193258249e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/EserczioMultiThreading.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/src/AdderThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/src/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/src/Giuria.java" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/src/Giuria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +58,14 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "X:/Users/celeghin.riccardo.OSDBSESTO/Desktop/TPSI/Esercizi/SimulatoreGaraOlimpica/src/Main.java"
+    "onboarding.tips.debug.path": "X:/Users/celeghin.riccardo.OSDBSESTO/Desktop/TPSI/Esercizi/SimulatoreGaraOlimpica/EserczioMultiThreading/src/Main.java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="X:\Users\celeghin.riccardo.OSDBSESTO\Desktop\TPSI\Esercizi" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3e9ba240-0b9f-4cb9-a73a-fd193258249e" name="Changes" comment="" />
