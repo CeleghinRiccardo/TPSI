@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9ba240-0b9f-4cb9-a73a-fd193258249e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MultiThreading/ProduttoreConsumatore/src/Buffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiThreading/ProduttoreConsumatore/src/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiThreading/ProduttoreConsumatore/src/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiThreading/SimulatoreGaraOlimpica/SimulatoreGaraOlimpica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/Esercizi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/EserczioMultiThreading.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/EserczioMultiThreading.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/src/AdderThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/src/AdderThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/src/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/EserczioMultiThreading/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/SimulatoreGaraOlimpica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/ProduttoreConsumatore/ProduttoreConsumatore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/src/Atleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/SimulatoreGaraOlimpica/src/Atleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/src/Giuria.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/SimulatoreGaraOlimpica/src/Giuria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Esercizi/SimulatoreGaraOlimpica/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MultiThreading/SimulatoreGaraOlimpica/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +63,33 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.Unnamed.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "X:/Users/celeghin.riccardo.OSDBSESTO/Desktop/TPSI/Esercizi/SimulatoreGaraOlimpica/EserczioMultiThreading/src/Main.java"
+    "onboarding.tips.debug.path": "X:/Users/celeghin.riccardo.OSDBSESTO/Desktop/TPSI/MultiThreading/ProduttoreConsumatore/src/Main.java"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="X:\Users\celeghin.riccardo.OSDBSESTO\Desktop\TPSI\Esercizi" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ProduttoreConsumatore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,7 +105,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Esercizi/src/Main.java</url>
+          <url>file://$PROJECT_DIR$/MultiThreading/src/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
