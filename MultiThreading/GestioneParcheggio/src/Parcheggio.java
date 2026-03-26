@@ -11,9 +11,9 @@ public class Parcheggio {
         while(postiDisponibili==0){
             System.out.println("L'auto "+ auto.getName()+" in attesa. posti disponibili: "+postiDisponibili);
             wait();
-
         }
-
         postiDisponibili--;
+        System.out.println("L'auto "+ auto.getName()+" prende posto. posti disponibili: "+postiDisponibili);
     }
+
 }

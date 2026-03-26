@@ -15,6 +15,7 @@ public class Auto extends Thread{
         try {
             sleep(2000 + random.nextInt(3001));
             parcheggio.enter(this);
+            sleep(3000+random.nextInt(5000));
         }catch (InterruptedException e){
             interrupt();
         }
