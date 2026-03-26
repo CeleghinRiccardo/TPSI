@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e9ba240-0b9f-4cb9-a73a-fd193258249e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiThreading/PortRoyal/PortRoyal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/PortRoyal/src/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/PortRoyal/src/Stiva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exeptions/1.1/1.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exeptions/Verifica/Verifica2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiThreading/GestioneParcheggio/GestioneParcheggio.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiThreading/GestioneParcheggio/src/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiThreading/GestioneParcheggio/src/Parcheggio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -60,7 +63,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "onboarding.tips.debug.path": "X:/Users/celeghin.riccardo.OSDBSESTO/Desktop/TPSI/MultiThreading/PortRoyal/src/Main.java"
+    "onboarding.tips.debug.path": "X:/Users/celeghin.riccardo.OSDBSESTO/Desktop/TPSI/MultiThreading/GestioneParcheggio/src/Main.java"
   }
 }]]></component>
   <component name="RecentsManager">
