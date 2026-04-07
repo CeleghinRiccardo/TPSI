@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exeptions/EsercitazioneEX2301/EsercitazioneEX2301.iml" filepath="$PROJECT_DIR$/Exeptions/EsercitazioneEX2301/EsercitazioneEX2301.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/EserczioMultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/EserczioMultiThreading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreading/GestioneParcheggio/GestioneParcheggio.iml" filepath="$PROJECT_DIR$/MultiThreading/GestioneParcheggio/GestioneParcheggio.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/MultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exeptions/Pandora/Pandora.iml" filepath="$PROJECT_DIR$/Exeptions/Pandora/Pandora.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/PortRoyal/PortRoyal.iml" filepath="$PROJECT_DIR$/MultiThreading/PortRoyal/PortRoyal.iml" />
