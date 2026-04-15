@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Exeptions/EsercitazioneEX2301/EsercitazioneEX2301.iml" filepath="$PROJECT_DIR$/Exeptions/EsercitazioneEX2301/EsercitazioneEX2301.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exeptions/1.1/1.1.iml" filepath="$PROJECT_DIR$/Exeptions/1.1/1.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" filepath="$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/EserczioMultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/EserczioMultiThreading/EserczioMultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/GestioneParcheggio/GestioneParcheggio.iml" filepath="$PROJECT_DIR$/MultiThreading/GestioneParcheggio/GestioneParcheggio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MultiThreading/MultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreading/MultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exeptions/Pandora/Pandora.iml" filepath="$PROJECT_DIR$/Exeptions/Pandora/Pandora.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/PortRoyal/PortRoyal.iml" filepath="$PROJECT_DIR$/MultiThreading/PortRoyal/PortRoyal.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/ProduttoreConsumatore/ProduttoreConsumatore.iml" filepath="$PROJECT_DIR$/MultiThreading/ProduttoreConsumatore/ProduttoreConsumatore.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreading/SimulatoreGaraOlimpica/SimulatoreGaraOlimpica.iml" filepath="$PROJECT_DIR$/MultiThreading/SimulatoreGaraOlimpica/SimulatoreGaraOlimpica.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TPSI.iml" filepath="$PROJECT_DIR$/.idea/TPSI.iml" />
       <module fileurl="file://$PROJECT_DIR$/UML/UML.iml" filepath="$PROJECT_DIR$/UML/UML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exeptions/Verifica/Verifica.iml" filepath="$PROJECT_DIR$/Exeptions/Verifica/Verifica.iml" />
     </modules>
   </component>
 </project>
