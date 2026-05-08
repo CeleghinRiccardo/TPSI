@@ -53,9 +53,30 @@ public class Terminal {
 
     }
 
-    public void occupaGateNazionale(Volo v) {
+    public void occupaGateNazionale(Volo v)throws InterruptedException {
+        lock.lock();
+
+        try {
+            while (gateNazionaliLiberi == 0) attendiNazionali.await();
+
+            gateNazionaliLiberi--;
+            System.out.println("[GATE-INTERNAZIONALE]: "+v.getName()+"occupa un gate"+
+                    "(int.liberi: "+ gateNazionaliLiberi+")");
+        } finally {
+            lock.unlock();
+        }
     }
 
     public void rilasciaGateNazionale(Volo v) {
+        lock.lock();
+
+        try {
+            gateNazionaliLiberi++;
+            System.out.println("[GATE-INTERNAZIONALE]: "+v.getName()+"lascia un gate"+
+                    "(int.liberi: "+ gateNazionaliLiberi+")");
+            attendiNazionali.signal();
+        } finally {
+            lock.unlock();
+        }
     }
 }
