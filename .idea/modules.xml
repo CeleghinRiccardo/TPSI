@@ -4,14 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exeptions/1.1/1.1.iml" filepath="$PROJECT_DIR$/Exeptions/1.1/1.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" filepath="$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/Esercizi-Potenziamento.iml" filepath="$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/Esercizi-Potenziamento.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/EserczioMultiThreading/EserczioMultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreadingg/EserczioMultiThreading/EserczioMultiThreading.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/GestioneParcheggio/GestioneParcheggio.iml" filepath="$PROJECT_DIR$/MultiThreadingg/GestioneParcheggio/GestioneParcheggio.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/ModuloA/ModuloA.iml" filepath="$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/ModuloA/ModuloA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/MultiThreadingg.iml" filepath="$PROJECT_DIR$/MultiThreadingg/MultiThreadingg.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Exeptions/1.1/1.1.iml" filepath="$PROJECT_DIR$/Exeptions/1.1/1.1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" filepath="$PROJECT_DIR$/Exeptions/1.2-1.3/1.2-1.3.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/ModuloA/A1/A1.iml" filepath="$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/ModuloA/A1/A1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/Airport/Airport.iml" filepath="$PROJECT_DIR$/MultiThreadingg/Airport/Airport.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/Esercizi-Potenziamento.iml" filepath="$PROJECT_DIR$/MultiThreadingg/Esercizi-Potenziamento/Esercizi-Potenziamento.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/EserczioMultiThreading/EserczioMultiThreading.iml" filepath="$PROJECT_DIR$/MultiThreadingg/EserczioMultiThreading/EserczioMultiThreading.iml" />
       <module fileurl="file://$PROJECT_DIR$/MultiThreadingg/GestioneParcheggio/GestioneParcheggio.iml" filepath="$PROJECT_DIR$/MultiThreadingg/GestioneParcheggio/GestioneParcheggio.iml" />
