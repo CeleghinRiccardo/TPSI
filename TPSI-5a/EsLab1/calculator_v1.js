@@ -13,14 +13,35 @@ function dif(a, b){
     return a-b
 }
 
+function mul(a, b){
+    return a*b
+}
+
+function quoz(a, b){
+    return a/b
+}
+
+function elev(a,b){
+    return a**b
+}
+
 function chooseOp(operand) {
     switch(operand){
+    
     case '+': 
-    return sum
+        return sum
 
     case '-':
         return dif
+    
+    case '*':
+        return mul
+    
+    case '/':
+        return quoz
 
+    case '^':
+        return elev
     }
 }
 
