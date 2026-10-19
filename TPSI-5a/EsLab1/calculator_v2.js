@@ -4,7 +4,7 @@ const calcolaBtn= document.getElementById("calcolaBtn")
 const resElem= document.getElementById("result")
 const op= document.getElementById("operation")
 
-
+let interval = null
 
 const operations = {
     '+': (a, b) => a + b,
@@ -37,6 +37,22 @@ calcolaBtn.addEventListener("click", function () {
 
 
 document.addEventListener("DOMContentLoaded",  () => {
+
+    let i = 0
+    clearInterval(interval)
+
     setTimeout(() => console.log("qui"), 2000)
-    setInterval(() => console.log("repetition"), 500)
+    interval = setInterval(() => console.log("repetition"+ i++), 500)
+})
+
+n1Elem.addEventListener("input",  (e) => {
+    let v = e.target.value
+    if(e.target.value.length >=10){
+        console.log("too long")
+        //n1Elem.disabled = true
+        //n1Elem.readonly = true
+        n1Elem.value = v.slice(0, 10)
+    }
+    let v = e.target.value
+    console.log(console.log(typeof v))
 })
