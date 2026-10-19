@@ -14,27 +14,6 @@ const operations = {
     '^': (a, b) => a ** b
 }
 
-function sum(a, b){
-    return a+b
-}
-
-function dif(a, b){
-    return a-b
-}
-
-function mul(a, b){
-    return a*b
-}
-
-function quoz(a, b){
-    return a/b
-}
-
-function elev(a,b){
-    return a**b
-}
-
-
 
 function compute(f, a, b){
     return f(a,b)
@@ -45,7 +24,7 @@ calcolaBtn.addEventListener("click", function () {
     const b = Number(n2Elem.value)
     
     const res = compute(operations[op.value], a, b)
-    
+
     resElem.textContent= res
 
 })
