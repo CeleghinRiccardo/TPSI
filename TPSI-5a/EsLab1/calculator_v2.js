@@ -34,3 +34,9 @@ calcolaBtn.addEventListener("click", function () {
     resElem.textContent= err.message
    }
 })
+
+
+document.addEventListener("DOMContentLoaded",  () => {
+    setTimeout(() => console.log("qui"), 2000)
+    setInterval(() => console.log("repetition"), 500)
+})
