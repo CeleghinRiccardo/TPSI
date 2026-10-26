@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="calculator_v3.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
-    <label for="">Primo numero: 
-        <input type="number" id="n1">
+    <label for="n1">Primo numero:
+        <input type="number" id="n1" maxlength="10">
     </label>
     <br><br>
-    <select id="operation">
-        <option value="+">+</option>
-        <option value="-">-</option>
-        <option value="*">*</option>
-        <option value="/">/</option>
-        <option value="^">^</option>
-    </select>
+    <label for="operation">
+        Operazione:
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="**">**</option>
+            <option value="%">%</option>
+            <option value="max">max</option>
+            <option value="min">min</option>
+        </select>
+    </label>
     <br><br>
-    <label for="n2">Secondo numero: 
-        <input type="number" id="n2">
+    <label for="n2">Secondo numero:
+        <input type="number" id="n2" placeholder="Inserisci secondo numero">
     </label>
     <br>
     <button id="calcolaBtn">Calcola</button>
-    <h>Risultato</h3>
+    <h3>Risultato</h3>
     <p id="result"></p>
-    <br><br>
-
-
-
+    <p id="error"></p>
 </body>
 
 </html>
