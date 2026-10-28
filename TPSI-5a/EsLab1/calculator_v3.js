@@ -27,6 +27,7 @@ const regole =[
 const operations = {
     '+': (a, b) => a + b,
     '-': (a, b) => a - b,
+    '*': (a, b) => a * b,
     '/': (a, b) => {
         if (b === 0) throw new Error("Denominator is zero.")
         return a / b;
