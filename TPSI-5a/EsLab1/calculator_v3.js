@@ -27,16 +27,6 @@ const regole =[
 const operations = {
     '+': (a, b) => a + b,
     '-': (a, b) => a - b,
-<<<<<<< HEAD
-    '*': (a,b)  => a * b,
-    '/': (a, b) => {
-        if (b === 0) throw new Error("Denominator is zero.")
-            return a / b
-    },
-    'min': (a, b) => a < b ? a : b,
-    'max': (a, b) => a > b ? a : b,
-    'avg': (a, b) => (a + b) / 2
-=======
     '*': (a, b) => a * b,
     '/': (a, b) => {
         if (b === 0) throw new Error("Denominator is zero.")
