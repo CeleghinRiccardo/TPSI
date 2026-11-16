@@ -8,8 +8,10 @@ const multBtn = document.getElementById("multBtn")
 const op = document.getElementById("operation");
 const resElem = document.getElementById("result")
 const msgElem = document.getElementById("error")
+const helpElem = document.getElementById("help")
 
 let interval;
+let lastRes = null;
 
 //JS OBJ = hashmap -> K,V
 const operations = {
@@ -55,6 +57,35 @@ const keyMap = {
     }
 }
 
+// id : txt
+const txtHelper = {
+    n1: "Inserisci primo numero",
+    n2: "Inserisci secondo numero"
+}
+
+const opoerationsHelper = {
+    "+": "Somma tra due numeri",
+    "*": "Moltiplicazione tra due numeri",
+    "-": "Differenza tra due numeri",
+}
+
+function textManager(txtMap, keyOf, show) {
+    //e = eventObject
+    return (e) => {
+        //con che chiave accedo alla map?
+        //1) keyOf(e.target) = id di target
+        //2) txtMap[ (1) ] => restituisce str
+        //3) show => mostra (2)
+        show(txtMap[keyOf(e)])
+    }
+}
+
+const v = textManager(txtHelper, (e) => e.target.id, (txt) => helpElem.textContent = txt)
+n1Elem.addEventListener("focus", v)
+n1Elem.addEventListener("blur", () => helpElem.textContent = "")
+n2Elem.addEventListener("focus", v)
+n2Elem.addEventListener("blur", () => helpElem.textContent = "")
+
 function valida(regole, t1, t2) {
     for (const regola of regole) regola(t1, t2)
 }
@@ -67,6 +98,7 @@ function keyManager(keyMap) {
     }
 }
 
+
 function executeOp(a, simbolo, b) {
     try {
         valida(regole, a, b)
@@ -75,6 +107,7 @@ function executeOp(a, simbolo, b) {
         const res = compute(scegliOperazione(simbolo), n1, n2)
         //Puliamo il box prima di assegnare il nuovo risultato/errore
         msgElem.textContent = ""
+        lastRes = res
         resElem.textContent = format(n1, simbolo, n2, res)
     } catch (err) {
         resElem.textContent = ""
@@ -133,6 +166,23 @@ document.addEventListener("DOMContentLoaded", () => {
     //interval = setInterval(() => console.log("repetion"), 500)
 })
 
+/*function describeOperation(e) {
+    e.preventDefault()
+    const v = textManager(opoerationsHelper, (e) => e.target.textContent, (txt) => helpElem.textContent = txt)
+    v(e)
+}
+*/
+
+const opDescriptor = textManager(opoerationsHelper, (e) => e.target.textContent, (txt) => helpElem.textContent = txt)
+function describeOperation(e) {
+    e.preventDefault()
+    opDescriptor(e)
+}
+
+sumBtn.addEventListener("contextmenu", describeOperation)
+multBtn.addEventListener("contextmenu", describeOperation)
+subBtn.addEventListener("contextmenu", describeOperation)
+
 n1Elem.addEventListener("input", (e) => {
     let v = e.target.value
     if (v.length >= 10) {
@@ -140,4 +190,10 @@ n1Elem.addEventListener("input", (e) => {
         //n1Elem.readOnly = true
         n1Elem.value = v.slice(0, 10)
     }
+})
+
+resElem.addEventListener("dblclick", () => {
+    if (lastRes === null) return
+    n1Elem.value = lastRes
+    n2Elem.value = ""
 })
