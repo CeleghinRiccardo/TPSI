@@ -27,13 +27,11 @@ const regole =[
 const operations = {
     '+': (a, b) => a + b,
     '-': (a, b) => a - b,
+    '*': (a,b)  => a * b,
     '/': (a, b) => {
         if (b === 0) throw new Error("Denominator is zero.")
-        return a / b
+            return a / b
     },
-    '*': (a, b) => a * b
-    },
-    '%': (a, b) => a % b,
     'min': (a, b) => a < b ? a : b,
     'max': (a, b) => a > b ? a : b,
     'avg': (a, b) => (a + b) / 2
@@ -79,7 +77,7 @@ function executeComp(a , op, b){
 
 
 function forOperation(sym) {
-    return function () {
+    return () => {
         executeComp(n1Elem.value, sym, n2Elem.value)
     }
 }
