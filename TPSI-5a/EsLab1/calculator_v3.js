@@ -27,6 +27,7 @@ const regole =[
 const operations = {
     '+': (a, b) => a + b,
     '-': (a, b) => a - b,
+<<<<<<< HEAD
     '*': (a,b)  => a * b,
     '/': (a, b) => {
         if (b === 0) throw new Error("Denominator is zero.")
@@ -35,6 +36,21 @@ const operations = {
     'min': (a, b) => a < b ? a : b,
     'max': (a, b) => a > b ? a : b,
     'avg': (a, b) => (a + b) / 2
+=======
+    '*': (a, b) => a * b,
+    '/': (a, b) => {
+        if (b === 0) throw new Error("Denominator is zero.")
+        return a / b;
+    },
+    '%': (a, b) => {
+        if (b === 0) throw new Error("Divisione per zero.")
+        return a % b;
+    },
+    '**': (a, b) => a ** b,
+    'max': (a, b) => Math.max(a, b),
+    'min': (a, b) => Math.min(a, b),
+    'media': (a, b) => (a + b) / 2
+>>>>>>> 301a9f2f95ea53e92027abb6461f6dc19623dc99
 }
 
 //Not the usual one... ;)
