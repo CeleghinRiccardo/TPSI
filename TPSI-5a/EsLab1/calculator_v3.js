@@ -2,26 +2,14 @@ const n1Elem = document.getElementById("n1");
 const n2Elem = document.getElementById("n2");
 const calcolBtn = document.getElementById("calcolaBtn")
 const sumBtn = document.getElementById("sumBtn")
-const sotBtn = document.getElementById("sotBtn")
-const divBtn = document.getElementById("divBtn")
-const prodBtn = document.getElementById("prodBtn")
+const subBtn = document.getElementById("subBtn")
+const multBtn = document.getElementById("multBtn")
 
 const op = document.getElementById("operation");
 const resElem = document.getElementById("result")
-const errElem = document.getElementById("error")
+const msgElem = document.getElementById("error")
 
 let interval;
-const LIMIT = 1000000;
-
-const regole =[
-    (t1, t2) =>{
-    if(t1 === ""|| t2 === "") throw new Error("Inserre entrambi i valori")
-    },
-    (a, b) => {
-    if(a > LIMIT || b > LIMIT || a < -LIMIT || b < -LIMIT) throw new Error("BOOM! Valore troppo grande o troppo piccolo")
-    },
-
-]
 
 //JS OBJ = hashmap -> K,V
 const operations = {
@@ -30,87 +18,111 @@ const operations = {
     '*': (a, b) => a * b,
     '/': (a, b) => {
         if (b === 0) throw new Error("Denominator is zero.")
-        return a / b;
+        return a / b
     },
     '%': (a, b) => {
-        if (b === 0) throw new Error("Divisione per zero.")
-        return a % b;
+        if (b === 0) throw new Error("Denominator is zero.")
+        return a % b
     },
     '**': (a, b) => a ** b,
-    'max': (a, b) => Math.max(a, b),
-    'min': (a, b) => Math.min(a, b),
+    'max': (a, b) => a > b ? a : b,
+    'min': (n, m) => Math.min(n, m),
     'media': (a, b) => (a + b) / 2
->>>>>>> 301a9f2f95ea53e92027abb6461f6dc19623dc99
 }
 
-//Not the usual one... ;)
-function chooseOp(symbol) {
-    const op = operations[symbol]
-    if (op === undefined) throw new Error("Operation not recognised: " + symbol)
-    return op
-}
+const LIMIT = 1000000
+const regole = [
+    (t1, t2) => {
+        if (t1 === "" || t2 === "") throw new Error("Inserire entrambi i numeri")
+    },
+    (t1, t2) => {
+        if (t1 > LIMIT || t1 < -LIMIT || t2 > LIMIT || t2 < -LIMIT) throw new Error("Numeri troppo grandi")
+        //*Soluzione alternativa più leggibile.
+        //*if (Math.abs(t1) > LIMIT || Math.abs(t2) > LIMIT) throw new Error("Numeri troppo grandi")
+    }
+]
 
-function scegliOperaziome(simbolo) {
-    const v = operations[simbolo]
-    if(v === undefined) throw new Error("Operazione non supportata: " + simbolo)
-    return v;
-}
-
-function valida (regole, v1, v2) {
-    for (const r of regole) {
-        r(v1, v2)
-    }   
-}
-
-function compute(f, a, b) {
-    return a+" "+f.name+" "+b+" = "+f(a, b)
-}
-
-function executeComp(a , op, b){
-    try {
-        valida(regole, n1Elem.value, n2Elem.value)
-        //prendere primo numero
-        const a = Number(n1Elem.value)
-        const b = Number(n2Elem.value)
-
-        const res = compute(scegliOperaziome(op), a, b)
-        errElem.textContent = ""
-        resElem.textContent = res
-    } catch (err) {
-        errElem.textContent = err.message
+/*
+* Attenzione all'ordine di dichiarazione: function vs const
+*/
+const keyMap = {
+    Enter: update,
+    Escape: () => {
+        n1Elem.value = ""
+        n2Elem.value = ""
+        resElem.textContent = ""
+        msgElem.textContent = ""
     }
 }
 
+function valida(regole, t1, t2) {
+    for (const regola of regole) regola(t1, t2)
+}
+
+
+function keyManager(keyMap) {
+    return (e) => {
+        const userAction = keyMap[e.key]
+        if (userAction !== undefined) userAction()
+    }
+}
+
+function executeOp(a, simbolo, b) {
+    try {
+        valida(regole, a, b)
+        const n1 = Number(a)
+        const n2 = Number(b)
+        const res = compute(scegliOperazione(simbolo), n1, n2)
+        //Puliamo il box prima di assegnare il nuovo risultato/errore
+        msgElem.textContent = ""
+        resElem.textContent = format(n1, simbolo, n2, res)
+    } catch (err) {
+        resElem.textContent = ""
+        msgElem.textContent = err.message
+    }
+}
 
 function forOperation(sym) {
     return () => {
-        executeComp(n1Elem.value, sym, n2Elem.value)
+        executeOp(n1Elem.value, sym, n2Elem.value)
     }
 }
 
-sumBtn.addEventListener("click", forOperation(sumBtn.textContent))
-sotBtn.addEventListener("click", forOperation(sotBtn.textContent))
-divBtn.addEventListener("click", forOperation(divBtn.textContent))
-prodBtn.addEventListener("click", forOperation(prodBtn.textContent))
 
+
+function scegliOperazione(simbolo) {
+    const v = operations[simbolo]; //undefined se !Key
+    if (v === undefined) throw new Error("Operazione non supportata: " + simbolo)
+    return v;
+}
+
+function format(a, sym, b, res) {
+    //"a simbolo b = res"
+    return a + " " + sym + " " + b + " = " + res
+}
+
+function compute(f, a, b) {
+    return f(a, b)
+}
+
+function update() {
+    return executeOp(n1Elem.value, op.value, n2Elem.value)
+}
 
 //Come controllo il btn? AEL
-calcolBtn.addEventListener("click", function () {
-    
-    try {
-        valida(regole, n1Elem.value, n2Elem.value)
-        //prendere primo numero
-        const a = Number(n1Elem.value)
-        const b = Number(n2Elem.value)
-        const res = compute(scegliOperaziome(op.value), a, b)
-        errElem.textContent = ""
-        resElem.textContent = res
-    } catch (err) {
-        errElem.textContent = err.message
-    }
-    clearInterval(interval);
+/*calcolBtn.addEventListener("click", function () {
+    executeOp(n1Elem.value, op.value, n2Elem.value)
+})*/
+calcolBtn.addEventListener("click", update)
+op.addEventListener("change", update)
+n1Elem.addEventListener("input", update)
+n2Elem.addEventListener("input", update)
 
-})
+document.addEventListener("keydown", keyManager(keyMap))
+
+subBtn.addEventListener("click", forOperation(subBtn.textContent))
+sumBtn.addEventListener("click", forOperation(sumBtn.textContent))
+multBtn.addEventListener("click", forOperation(multBtn.textContent))
 
 //Eseguo quando HTML è renderizzato
 document.addEventListener("DOMContentLoaded", () => {
